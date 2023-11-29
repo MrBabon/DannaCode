@@ -88,8 +88,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     scrollButton.addEventListener('click', function (event) {
         event.preventDefault();
-        // Ajoutez le code pour faire défiler vers le haut ici
-        // Par exemple, utilisez window.scrollTo() ou une bibliothèque d'animation
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     });
 
     // Appeler la fonction updateScroll une fois au chargement de la page

@@ -1,6 +1,6 @@
 .transition-top {
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
     background: var(--navbar);
     border-radius: 50%;
     display: flex;
@@ -14,8 +14,8 @@
     opacity: 0;
   }
   .scroll-top {
-      height: 40px;
-      width: 40px;
+      height: 60px;
+      width: 60px;
       background: var(--navbar);
       border-radius: 50%;
       display: flex;
@@ -26,14 +26,15 @@
       bottom: 85px;
       border: 1px solid var(--paragraphe);
       opacity: 1;
-      transition: opacity 2.5s ease;
+      transition: opacity 2.5s ease, transform 0.3s ease-in-out;
     }
     
-    .scroll-top span {
-      font-size: 50px;
+    #scrollButton {
+      font-size: 29px;
     }
-    .scroll-top span:hover {
-      font-size: 60px;
+    .scroll-top:hover {
+      transform: scale(1.1);
+      transition: all 0.3s ease;
     }
     
     

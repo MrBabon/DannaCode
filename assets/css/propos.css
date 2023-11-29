@@ -24,7 +24,7 @@
     padding: 0 20px 0 0;
 }
 .button-div{
-    background-color: #ffffff;
+    background-color: var(--navbar);
     width: 140px;
     height: 40px;
     display: flex;
