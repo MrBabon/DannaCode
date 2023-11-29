@@ -23,13 +23,13 @@ body{
 }
 
 /* SECTION CITATION */
-#citation{
+.citation{
     display: flex;
     align-items: center;
     height: 240px;
     background-color: var(--navbar);
 }
-#citation h4{
+.citation h4{
     display: flex;
     justify-content: center;
     color: var(--paragraphe);
@@ -64,7 +64,7 @@ body{
     font-size: 18px;
 
   }
-  #citation h4{
+  .citation h4{
     font-size: 18px;
 }
 }

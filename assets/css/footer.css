@@ -86,6 +86,7 @@ footer {
     font-size: 20px;
     font-weight: 500;
     color: #ffffff;
+    position: relative;
 }
 @media screen and (max-width: 1080px) {
     .foot-contenu {

@@ -51,16 +51,23 @@ var isNavbarVisible = true; // Pour suivre l'état actuel de la navbar
 function handleScroll() {
     // Position actuelle du défilement
     var scrollY = window.scrollY;
+    var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
 
     // Ajouter ou supprimer la classe pour l'animation d'apparition de la navbar
-    if (scrollY > 100 && isNavbarVisible) {
-        navbar.classList.add('navbar-out');
-        isNavbarVisible = false;
-    } else if (scrollY <= 100 && !isNavbarVisible) {
+    if (viewportWidth > 768) { // Supposons que 768px est la largeur à partir de laquelle vous souhaitez masquer la navbar
+        if (scrollY > 100 && isNavbarVisible) {
+            navbar.classList.add('navbar-out');
+            isNavbarVisible = false;
+        } else if (scrollY <= 100 && !isNavbarVisible) {
+            navbar.classList.remove('navbar-out');
+            isNavbarVisible = true;
+        }
+    } else {
+        // Pour les téléphones, masquer la navbar en descendant de la page
         navbar.classList.remove('navbar-out');
-
         isNavbarVisible = true;
     }
+
 }
 
 // Ajouter un gestionnaire d'événement de défilement
