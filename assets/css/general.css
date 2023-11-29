@@ -1,0 +1,70 @@
+:root{
+    --navbar: #051a24;
+    --body: #06373A;
+    --color-font: #1F5F5B;
+    --color-font-2: #159947;
+    --color-flash: #4FF57B;
+    --paragraphe: #A8B1B9;
+}
+/* GÉNÉRAL */
+body{
+    background-color: var(--body) !important;
+}
+.color-text{
+    color: var(--color-font);
+}
+.title-important{
+    font-family: 'Hurricane', cursive;
+    font-size: 125px;
+    color: var(--color-flash);
+}
+.icon-flash{
+    color: var(--color-flash);
+}
+
+/* SECTION CITATION */
+#citation{
+    display: flex;
+    align-items: center;
+    height: 240px;
+    background-color: var(--navbar);
+}
+#citation h4{
+    display: flex;
+    justify-content: center;
+    color: var(--paragraphe);
+}
+
+/* BOUTON CONTACT */
+.conseil-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conseil-contact a{
+    position: absolute;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 600;
+    background-color: var(--color-flash);
+    color: var(--navbar);
+    border-radius: 5px;
+    margin-top: 18px;
+    padding: 16px 30px;
+
+    transition: all 0.2s ease;
+}
+.conseil-contact a:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
+
+@media screen and (max-width: 576px) {
+  .conseil-contact a{
+    font-size: 18px;
+
+  }
+  #citation h4{
+    font-size: 18px;
+}
+}

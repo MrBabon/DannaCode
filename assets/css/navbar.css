@@ -1,0 +1,126 @@
+.font-nav{
+    color: var(--paragraphe) !important;
+    font-weight: 900;
+    transition: color 1s ease;
+}
+.font-nav:hover{
+    color: #ffffff !important;
+    transition: color 1s ease;
+}
+.font-flash{
+    color: var(--color-flash) !important;
+    transition: color 0.5s ease;
+}
+.font-flash:hover{
+    color: #33f130 !important;
+    transition: color 0.5s ease;
+}
+.container-fluid{
+    padding: 0 50px !important;
+}
+.dropdown-menu{
+    background-color: #061A23 !important;
+    border: 1px solid var(--color-flash) !important;
+}
+.navbar-brand img {
+    position: relative;
+    top: 4px;
+    width: 75px;
+    height: 70px;
+}
+.dropdown-item{
+    color: var(--paragraphe) !important;
+}
+.dropdown-item:hover{
+    background-color: var(--body) !important;
+    color: #ffffff !important;
+}
+.active{
+    color: #ffffff !important;
+    border-bottom: 2px solid var(--color-flash) !important;
+    display: inline-block !important;
+    padding: 10px 0 5px 0 !important;
+}
+.navbar-nav .nav-link:not(.active) {
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0 5px 0 !important;
+}
+.navbar-nav .nav-link:not(.active)::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-flash);
+    transform-origin: right;
+    transition: width 0.3s ease;
+}
+.navbar-nav .nav-link:not(.active):hover::before {
+    width: 100%;
+}
+.navbar-nav .nav-link:not(.active):not(:hover)::before {
+    width: 0;
+}
+.navbar {
+    background-color: var(--navbar);
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    animation: navbar 0.25s forwards;
+}
+.navbar-out {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    animation: navbarOut 0.25s forwards;
+    
+}
+@keyframes navbar {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes navbarOut {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1195px) and (min-width: 992px) {
+    .contact-laptop{
+        display: none !important;
+    }
+}
+@media screen and (max-width: 992px){
+    .nav-item{
+        width: fit-content;
+    }
+}
+@media screen and (max-width: 600px) and (min-width: 100px) {
+    .navbar-toggler{
+        position: relative !important;
+        left: 30px !important;
+    }
+    .navbar-brand {
+        position: relative;
+        right: 30px;
+    }
+    .navbar-brand img {
+        width: 70px;
+        height: 60px;
+    }
+}
