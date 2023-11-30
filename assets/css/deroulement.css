@@ -1,0 +1,114 @@
+.card-body {
+    background-color: var(--navbar);
+    border: 1px solid var(--color-flash);
+    border-radius: 8px;
+}
+.card {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+    --bs-card-bg: initial !important;
+    width: 13rem;
+    min-height: 22rem;
+    transition: all 0.4s ease;
+}
+.card:hover {
+    box-shadow: 0px 0px 14px 1px var(--color-flash);
+    transform: scale(1.05);
+    transition: all 0.4s ease;
+}
+.card-body h1{
+    font-size: 80px;
+    color: var(--color-flash);
+}
+.card-body h5{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 22px;
+}
+.card-body p{
+    color: var(--paragraphe);
+    font-size: 18px;
+}
+#deroulement .title-important{
+    font-size: 125px;
+    position: relative;
+    top: 27px;
+    z-index: -1;
+}
+.phrase-explicative{
+    color: #ffffff;
+    font-size: 20px;
+    text-shadow: 4px 4px 3px rgba(0,0,0,0.2);
+    font-weight: 800;
+}
+
+.div-deroulement {
+    width: 140px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.button-deroulement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-flash);
+    border: 2px solid var(--color-flash);
+    padding: 10px 29px;
+    width: 280px;
+    height: 40px;
+    transition: all 0.4s ease;
+}
+.button-deroulement:hover{
+    background-color: var(--color-flash);
+    color: var(--navbar);
+    transform: scale(1.1);
+    transition: all 0.4s ease;
+}
+
+@media screen and (max-width: 1200px) {
+    .card-place {
+        display: flex;
+        justify-content: center;
+    }
+    .card {
+       width: 400px;
+       min-height: 14rem;
+    }
+}
+@media screen and (max-width: 992px) {
+    #deroulement .title-important {
+        font-size: 100px;
+    }
+    .phrase-explicative{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 767px) {
+    #deroulement .title-important {
+        font-size: 60px;
+    }
+    .phrase-explicative{
+        font-size: 16px;
+    }
+    .card-body p{
+        font-size: 12px;
+    }
+    .card-body h5{
+        font-size: 18px;
+    }
+    .card{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 320px) {
+    #deroulement .title-important {
+        font-size: 44px;
+    }
+    .phrase-explicative{
+        margin-top: 30px;
+    }
+}
