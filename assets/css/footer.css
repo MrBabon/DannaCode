@@ -60,7 +60,7 @@ footer {
 }
 .social-icon:hover{
     color: var(--color-flash);
-    background-color: #ffffff;
+    background-color: var(--body);
     transform: scale(1.3);
     transition: all 0.2s ease;
 }
