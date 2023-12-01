@@ -1,0 +1,13 @@
+.banner-service{
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(../../images/service/banner-service.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+}
+.banner-service h1{
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    font-weight: 900;
+    font-size: 65px;
+}

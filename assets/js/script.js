@@ -110,3 +110,38 @@ document.addEventListener('DOMContentLoaded', function () {
         scrollButton.removeEventListener('click', function () {});
     });
 });
+
+
+// ***************************************************************************************************** //
+
+// PAGE D'ERREUR //
+
+function handleErrors(errorCode) {
+    // Déterminez quelle page d'erreur afficher en fonction du code d'erreur
+    let errorPage;
+    switch (errorCode) {
+      case 404:
+        errorPage = "../../public/404.html";
+        break;
+      case 422:
+        errorPage = "../../public/422.html";
+        break;
+      case 500:
+        errorPage = "../../public/500.html";
+        break;
+      default:
+        errorPage = "../../public/404.html"; // Page par défaut pour les erreurs inconnues
+    }
+
+    // Redirigez l'utilisateur vers la page d'erreur
+    window.location.href = errorPage;
+  }
+
+  // Capturer les erreurs JavaScript
+  window.onerror = function (msg, url, line, col, error) {
+    handleErrors(500); // Redirige vers la page d'erreur 500 en cas d'erreur JavaScript
+    return false;
+  };
+    // handleErrors(404);
+
+

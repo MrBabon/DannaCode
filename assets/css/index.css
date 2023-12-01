@@ -1,9 +1,11 @@
 @import url('general.css');
 @import url('navbar.css');
-@import url('banner.css'); 
-@import url('propos.css');
-@import url('valeur.css');
 @import url('footer.css');
 @import url('scroll.css');
 @import url('loader.css');
-@import url('deroulement.css');
+@import url('home/banner.css'); 
+@import url('home/propos.css');
+@import url('home/valeur.css');
+@import url('home/deroulement.css');
+@import url('service/banner.css');
+@import url('service/timeline.css');
