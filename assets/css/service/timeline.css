@@ -1,5 +1,5 @@
 .timeline{
-    padding: 30px 10px;
+    padding: 150px 10px;
     position: relative;
     list-style-type: none;
 }
@@ -13,16 +13,124 @@
     left: 50%;
     margin-left: -2.5px;
     margin-top: 30px;
+    
 }
-.timeline-badge img {
+.timeline-badge{
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+}
+.timeline-badge-reverse{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 80px;
+}
+.div-badge-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 0 12px;
+}
+.div-badge-img-reverse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.badge-img {
     width: 400px;
     height: 400px;
     border-radius: 50%;
     border: 15px solid var(--color-font);
+    z-index: 1;
+}
+.badge-step{
+    display: flex;
+    align-items: center;
+}
+.badge-step-3{
+    display: flex;
+    align-items: center;
+    width: 432px;
+}
+.badge-step-reverse{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.big-number-1{
     position: relative;
-    top: 120px;
-    left: 20%;
+    bottom: 14px;
+    color: #B8D933;
+    text-shadow: 1px 10px 3px rgba(0,0,0,0.2);
+    font-size: 185px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    z-index: -1;
 }
-.timeline li {
-    
+.big-number-2{
+    position: relative;
+    bottom: 14px;
+    color: #4979ED;
+    text-shadow: 1px 10px 3px rgba(0,0,0,0.2);
+    font-size: 170px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    z-index: -1;
 }
+.big-number-3{
+    position: relative;
+    bottom: 8px;
+    color: #7A3FCB;
+    text-shadow: 1px 10px 3px rgba(0,0,0,0.2);
+    font-size: 170px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    z-index: -1;
+}
+.badge-title{
+    position: relative;
+    color: #ffffff;
+    text-shadow: 1px 5px 3px rgba(0,0,0,0.2);
+    font-size: 50px;
+    font-weight: 700;
+    right: 12%;
+}
+.badge-title-reverse{
+    position: relative;
+    width: 215px;
+    white-space: nowrap;
+    color: #ffffff;
+    text-shadow: 1px 5px 3px rgba(0,0,0,0.2);
+    font-size: 50px;
+    font-weight: 700;
+    left: 12%;
+}
+.badge-title-3{
+    position: relative;
+    color: #ffffff;
+    text-shadow: 1px 5px 3px rgba(0,0,0,0.2);
+    font-size: 50px;
+    font-weight: 700;
+    right: 38%;
+}
+.div-badge-content{
+    padding: 0 0 0 30px;
+}
+.div-badge-content-reverse{
+    padding: 0 30px 0 0;
+}
+.badge-content{
+    color: var(--paragraphe);
+    font-size: 24px;
+}
+.badge-step,
+.div-badge-img,
+.div-badge-content {
+    flex: 1; /* Distribuer l'espace disponible de manière égale */
+}
+
