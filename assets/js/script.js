@@ -121,27 +121,40 @@ function handleErrors(errorCode) {
     let errorPage;
     switch (errorCode) {
       case 404:
-        errorPage = "../../public/404.html";
+        errorPage = "/DannaCode/public/404.html";
         break;
       case 422:
-        errorPage = "../../public/422.html";
+        errorPage = "/DannaCode/public/422.html";
         break;
       case 500:
-        errorPage = "../../public/500.html";
+        errorPage = "/DannaCode/public/500.html";
         break;
       default:
-        errorPage = "../../public/404.html"; // Page par défaut pour les erreurs inconnues
+        errorPage = "/DannaCode/public/404.html"; // Page par défaut pour les erreurs inconnues
     }
 
     // Redirigez l'utilisateur vers la page d'erreur
     window.location.href = errorPage;
   }
 
+  function handleResourceErrors(event) {
+    const elementType = event.target.tagName.toLowerCase();
+    const srcAttribute = event.target.src || event.target.href;
+  
+    console.error(`Erreur de chargement de la ressource (${elementType}): ${srcAttribute}`);
+    
+    // Redirigez l'utilisateur vers la page d'erreur appropriée
+    handleErrors(404); // ou une autre logique en fonction de votre besoin
+  }
+  
+  // Écouteurs d'événements pour les erreurs de chargement de ressources
+  window.addEventListener('error', handleResourceErrors, true);
+  
   // Capturer les erreurs JavaScript
   window.onerror = function (msg, url, line, col, error) {
     handleErrors(500); // Redirige vers la page d'erreur 500 en cas d'erreur JavaScript
     return false;
   };
-    // handleErrors(404);
+    // handleErrors(500);
 
 

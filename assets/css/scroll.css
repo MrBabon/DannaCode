@@ -1,7 +1,7 @@
 .transition-top {
     height: 60px;
     width: 60px;
-    background: var(--navbar);
+    background: linear-gradient(110deg, #06373A 35%, #051a24);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -9,14 +9,14 @@
     position: fixed;
     right: 23px;
     bottom: 85px;
-    border: 1px solid #EEE3CB;
+    border: 1px solid var(--paragraphe);
     transition: opacity 0.5s ease;
     opacity: 0;
   }
   .scroll-top {
       height: 60px;
       width: 60px;
-      background: var(--navbar);
+      background: linear-gradient(110deg, #06373A 35%, #051a24);
       border-radius: 50%;
       display: flex;
       justify-content: center;
