@@ -83,7 +83,7 @@
 }
 .big-number-3{
     position: relative;
-    bottom: 8px;
+    bottom:8px;
     color: #7A3FCB;
     text-shadow: 1px 10px 3px rgba(0,0,0,0.2);
     font-size: 170px;
@@ -134,3 +134,22 @@
     flex: 1; /* Distribuer l'espace disponible de manière égale */
 }
 
+@media screen and (max-width: 1400px) {
+    .badge-title,
+    .badge-title-reverse,
+    .badge-title-3 {
+        font-size: 40px;
+    }
+    .big-number-1,
+    .big-number-2,
+    .big-number-3 {
+        font-size: 140px;
+    }
+    .badge-img {
+        width: 300px;
+        height: 300px;
+    }
+    .badge-content {
+        font-size: 18px;
+    }
+}
