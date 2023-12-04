@@ -1,0 +1,28 @@
+.title-mention{
+    color: #ffffff;
+    font-weight: 600;
+}
+.descrip-mention{
+    text-align: left;
+    color: var(--paragraphe);
+    font-weight: 600;
+}
+.content-mention{
+    color: var(--paragraphe);
+    font-weight: 600;
+}
+.hostinger{
+    text-decoration: none;
+    color: var(--color-flash);
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+.hostinger:hover{
+    color: var(--color-font);
+    transition: all 0.2s ease;
+}
+.articles-mentions{
+    list-style-type: none;
+    color: var(--paragraphe);
+    font-weight: 600;
+}

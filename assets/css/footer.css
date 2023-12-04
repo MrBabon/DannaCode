@@ -88,6 +88,15 @@ footer {
     color: #ffffff;
     position: relative;
 }
+.btn-mention{
+    color: var(--paragraphe);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.btn-mention:hover{
+    color: #ffffff;
+    transition: all 0.2s ease;
+}
 @media screen and (max-width: 1080px) {
     .foot-contenu {
         flex-direction: column;
