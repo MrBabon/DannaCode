@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -85,7 +85,7 @@
         <section id="banner-service">
             <div class="banner-service">
                 <div class="container">
-                    <h1>Nos services</h1>
+                    <h1>Nos <br><span class="color-text banner-title-contact">services</span></h1>
                 </div>
             </div>
         </section>
@@ -102,9 +102,9 @@
                                     <span class="big-number-1">01</span>
                                     <h1 class="badge-title"> Stratégie</h1>
                                 </div>
-                                <div class="div-badge-img">
-                                    <img src="../assets/images/service/Stratégie.jpg" alt="Femme écrit la demande du client" class="badge-img">
-                                </div>
+                                <picture class="div-badge-img">
+                                    <img loading="lazy" src="https://res.cloudinary.com/dilp6xqmb/image/upload/v1701768623/Strate%CC%81gie.jpg" alt="Analyse la demande du client" class="badge-img">
+                                </picture>
                                 <div class="div-badge-content">
                                     <h4 class="badge-content">Avant de créer votre site web, il est essentiel de définir clairement <span class="white-text">vos objectifs</span> et de comprendre votre public cible. <span class="white-text">Une stratégie bien pensée est la clé du succès en ligne.</span> Découvrez comment cela peut faire la différence pour votre entreprise.</h4>
                                 </div>
@@ -116,9 +116,9 @@
                                     <span class="big-number-2">02</span>
                                     <h1 class="badge-title-reverse"> UX & UI Design</h1>
                                 </div>
-                                <div class="div-badge-img-reverse">
-                                    <img src="../assets/images/service/UX-UI-DESIGN.jpg" alt="Étude UX" class="badge-img">
-                                </div>
+                                <picture class="div-badge-img-reverse">
+                                    <img loading="lazy" src="https://res.cloudinary.com/dilp6xqmb/image/upload/v1701768624/UX-UI-DESIGN.jpg" alt="Étude UX" class="badge-img">
+                                </picture>
                                 <div class="div-badge-content-reverse">
                                     <h4 class="badge-content">Nous créons votre <span class="white-text">identité de marque, votre charte graphique et les maquettes graphiques</span> selon les dernières tendances du web. Rendez votre site incontournable avec une <span class="white-text">UX exceptionnelle.</span> Découvrez comment la convivialité, la rapidité et l'utilité font la différence.</h4>
                                 </div>
@@ -130,9 +130,9 @@
                                     <span class="big-number-3">03</span>
                                     <h1 class="badge-title-3"> Référencement</h1>
                                 </div>
-                                <div class="div-badge-img">
-                                    <img src="../assets/images/service/seo.jpg" alt="Femme écrit la demande du client" class="badge-img">
-                                </div>
+                                <picture class="div-badge-img">
+                                    <img loading="lazy" src="https://res.cloudinary.com/dilp6xqmb/image/upload/v1701768623/seo.jpg" alt="Lettre s e o" class="badge-img">
+                                </picture>
                                 <div class="div-badge-content">
                                     <h4 class="badge-content">Optez pour une stratégie de <span class="white-text">référencement naturel ou Google Adwords orienté résultat !</span>
                                         Nous mettons en place une <span class="white-text">stratégie sur-mesure</span> afin d’améliorer votre visibilité, votre trafic et développer votre <span class="white-text">chiffre d’affaire.</span></h4>
@@ -140,6 +140,23 @@
                             </div>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </section>
+        <!-- *********  -->
+        <!--   CONTACT  -->
+        <!-- *********  -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="case-contact">
+                        <div class="cup-contact">
+                            <h2><span><i class="bi bi-cup-hot cup-hot"></i></span> Faisons connaissance</h2>
+                        </div>
+                        <div class="btn-contact-div">
+                            <a href="../contact" class="btn-contact">Contactez-nous</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -193,6 +210,9 @@
                                 <li class="nav-item px-3">
                                     <a class="nav-link font-nav" href="../demande-de-devis">Demande de devis</a>
                                 </li>
+                                <li class="nav-item px-3">
+                                    <a class="nav-link font-nav" href="../mentions-legales">Mentions légales</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -201,7 +221,7 @@
         </footer>
         <!-- ********* -->
         <div class="footer-copyright text-center mt-3">
-            <p>&nbsp;Copyright&nbsp;&copy;&nbsp;DannaCode <script>document.write(new Date().getFullYear())</script>. Tous droits réservés.</p>
+            <p>&nbsp;Copyright&nbsp;&copy;&nbsp;DannaCode <script>document.write(new Date().getFullYear())</script> - <a href="../mentions-legales" class="btn-mention">Mentions légales</a></p>
         </div>
         <a href="#" class="scroll-laptop" id="scrollButton">
             <span id="scrollIcon">
@@ -256,7 +276,7 @@
             </svg>
         </div>
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-        <script src="../assets/js/script.js"></script>
+        <script defer type="module" src="../assets/js/script.js"></script>
         <script>
             window.addEventListener('focus', function() {
               // Modifiez le titre de la page ici

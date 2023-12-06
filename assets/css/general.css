@@ -69,3 +69,51 @@ body{
     font-size: 18px;
 }
 }
+
+/* BOX CONTACT */
+.case-contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--navbar);
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    box-shadow: 3px 5px 3px rgba(0,0,0,0.5);
+}
+.cup-contact{
+    position: relative;
+    bottom: 16px;
+    padding: 0 0 0 20px;
+}
+.case-contact h2{  
+    font-size: 50px;
+    color: #ffffff;
+}
+.cup-hot{
+    font-size: 90px;
+    color: var(--color-flash);
+    position: relative;
+    top: 10px;
+    padding: 0 60px;
+}
+.btn-contact-div{
+    background: linear-gradient(90deg, var(--color-font) 35%, var(--body));
+    padding: 10px 15px;
+    margin: 0 90px;
+    border-radius: 3px;
+    box-shadow: 3px 5px 3px rgba(0,0,0,0.5);
+    background-size: 200% 100%;
+    background-position: right center;
+    transition: all 0.3s ease;
+}
+.btn-contact-div:hover{
+    background-position: left center;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+.btn-contact{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 30px;
+}

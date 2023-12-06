@@ -1,12 +1,18 @@
+/* GENERAL */
 @import url('general.css');
 @import url('mention.css');
 @import url('navbar.css');
 @import url('footer.css');
 @import url('scroll.css');
 @import url('loader.css');
+/* ACCUEIL */
 @import url('home/banner.css'); 
 @import url('home/propos.css');
 @import url('home/valeur.css');
 @import url('home/deroulement.css');
+/* SERVICE */
 @import url('service/banner.css');
 @import url('service/timeline.css');
+/* CONTACT */
+@import url('contact/banner.css');
+@import url('contact/form.css');

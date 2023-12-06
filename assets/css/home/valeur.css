@@ -1,7 +1,7 @@
 #valeur{
     padding: 10px;
     height: auto;
-    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(../../images/accueil/pion.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(https://res.cloudinary.com/dilp6xqmb/image/upload/v1701768622/pion.jpg);
     background-size: cover;
     background-position: center;
     opacity: .75;
