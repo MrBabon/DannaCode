@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -27,7 +27,7 @@
         <!-- FONT-FAMILY -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Inter&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Inter&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
         <!-- --- -->
         <!-- BOOTSTRAP -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -120,8 +120,10 @@
                     </div>
                     <div class=" picture-propos modal-footer col-lg-6">
                         <div class="mt-4 div-propos">
-                            <img loading="lazy" src="assets/images/accueil/Travail-equipe.jpg" class="img-fond-propos" alt="Travail d'équipe">
-                            <img loading="lazy" src="assets/images/accueil/Travail-equipe.jpg" class="img-propos" alt="Travail d'équipe">
+                            <picture>
+                                <img loading="lazy" src="https://res.cloudinary.com/dilp6xqmb/image/upload/v1701768623/Travail-equipe.jpg" class="img-fond-propos" alt="Travail d'équipe">
+                                <img loading="lazy" src="https://res.cloudinary.com/dilp6xqmb/image/upload/v1701768623/Travail-equipe.jpg" class="img-propos" alt="Travail d'équipe">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -140,7 +142,7 @@
         <!-- ********* -->
         <!--   VALEUR  -->
         <!-- ********* -->
-        <section id="valeur">
+        <section loading="lazy" id="valeur">
             <div class="container">
                 <div class="row">
                     <h1 class="title-important">Nos valeurs</h1>
@@ -291,7 +293,7 @@
                         </ul>
                     </div>
                     <div class="foot-logo">
-                        <a class="" href=""><img src="assets/images/DannaCode.png" alt="Logo DannaCode"></a>
+                        <a href=""><img src="assets/images/DannaCode.png" alt="Logo DannaCode"></a>
                     </div>
                     <div class="ms-auto foot-nav">
                         <h5>Accès rapide</h5>
@@ -369,16 +371,14 @@
                 <path fill="#1F5F5B" d="M172 166.445C175.068 166.445 177.556 168.932 177.556 172C177.556 175.068 175.068 177.556 172 177.556C168.932 177.556 166.444 175.068 166.444 172C166.444 168.932 168.932 166.445 172 166.445ZM172 177.021C174.773 177.021 177.021 174.773 177.021 172C177.021 169.227 174.773 166.979 172 166.979C169.227 166.979 166.979 169.227 166.979 172C166.979 174.773 169.227 177.021 172 177.021Z" id="center"></path>
             </svg>
         </div>
-        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-        <script src="assets/js/script-accueil.js"></script>
-        <script src="assets/js/script.js"></script>
+        <script defer src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script defer src="assets/js/script-accueil.js"></script>
+        <script defer type="module" src="assets/js/script.js"></script>
         <script>
             window.addEventListener('focus', function() {
-              // Modifiez le titre de la page ici
               document.title = 'DannaCode. || Conception Web - Maintenance - Référencement';
             });
             window.addEventListener('blur', function() {
-              // Utilise le titre de la page actuelle comme titre de base
               document.title = 'Vous partez ? 😢';  });
         </script>
         <!-- COOKIES -->

@@ -1,5 +1,5 @@
 .banner {
-    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(../../images/accueil/Banner-accueil.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(https://res.cloudinary.com/dilp6xqmb/image/upload/v1701768624/Banner_home.jpg);
     background-size: cover;
     background-position: center;
     padding: 150px 0;

@@ -43,41 +43,84 @@
         <!-- ********* -->
         <!--   NAVBAR  -->
         <!-- ********* -->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand font-nav" href=".."><img src="../assets/images/Logo.png" alt="Logo DannaCode"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                        <li class="nav-item px-3">
-                            <a class="nav-link font-nav" aria-current="page" href="..">Accueil</a>
-                        </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link font-nav" href="../services">Services</a>
-                        </li>
-                        <li  id="contact-dropdown" class="nav-item dropdown px-3">
-                            <a id="contact-nav" class="nav-link font-nav dropdown-toggle active" href="" data-bs-toggle="dropdown" aria-expanded="false">Contact</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="../demande-de-devis"><span class="font-flash">Obtenir un devis gratuit</span></a></li>
-                                <li><a class="dropdown-item" href="tel:+33698118890">+33 06 98 11 88 90</a></li>
-                                <li><a class="dropdown-item" href="">Nous écrire</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav d-flex ">
-                        <li class="nav-item px-3 contact-laptop">
-                            <a class="nav-link font-nav" href="../demande-de-devis"><span class="font-flash">Obtenir un devis gratuit</span></a>
-                        </li>
-                        <li class="nav-item px-3 contact-laptop">
-                            <a class="nav-link font-nav" href="tel:+33698118890">+33 06 98 11 88 90</a>
-                        </li>
-                    </ul>
+        <header>
+            <nav class="navbar navbar-expand-lg border-bottom border-secondary">
+                <div class="container-fluid">
+                    <a class="navbar-brand font-nav" href=".."><img src="../assets/images/Logo.png" alt="Logo DannaCode"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item px-3">
+                                <a class="nav-link font-nav" aria-current="page" href="..">Accueil</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link font-nav" href="../services">Services</a>
+                            </li>
+                            <li  id="contact-dropdown" class="nav-item dropdown px-3">
+                                <a id="contact-nav" class="nav-link font-nav dropdown-toggle active" href="" data-bs-toggle="dropdown" aria-expanded="false">Contact</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../demande-de-devis"><span class="font-flash">Obtenir un devis gratuit</span></a></li>
+                                    <li><a class="dropdown-item" href="tel:+33698118890">+33 06 98 11 88 90</a></li>
+                                    <li><a class="dropdown-item" href="">Nous écrire</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav d-flex ">
+                            <li class="nav-item px-3 contact-laptop">
+                                <a class="nav-link font-nav" href="../demande-de-devis"><span class="font-flash">Obtenir un devis gratuit</span></a>
+                            </li>
+                            <li class="nav-item px-3 contact-laptop">
+                                <a class="nav-link font-nav" href="tel:+33698118890">+33 06 98 11 88 90</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- ********* -->
+        <!--   BANNER  -->
+        <!-- ********* -->
+        <section id="banner-contact">
+            <div class="banner-contact">
+                <div class="container">
+                    <h1>Formulaire de <br><span class="color-text banner-title-contact">Contact</span></h1>
                 </div>
             </div>
-        </nav>
-        <footer>
+        </section>
+        <!-- ************* -->
+        <!--   FORMULAIRE  -->
+        <!-- ************* -->
+        <section id="formulaire">
+            <div class="container">
+                <div class="formulaire">
+                    <form class="form">
+                        <div class="input">
+                            <input required autocomplete="off" type="text">
+                            <label for="name">Votre nom</label>
+                        </div>
+                    
+                        <div class="input">
+                            <input required autocomplete="off" name="email" type="email">
+                            <label for="email">E-mail</label>
+                        </div>
+
+                        <div class="input">
+                            <input required autocomplete="off" name="telephone" type="tel">
+                            <label for="telephone">Votre téléphone</label>
+                        </div>
+                    
+                        <div class="input">
+                            <textarea required cols="50" rows="1" id="message"></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <input type="submit" value="Envoyer" class="button">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class=" border-bottom border-top border-secondary">
             <div class="container-fluid">
                 <div class="row">
                     <div class="foot-contenu">
@@ -124,6 +167,9 @@
                                 <li class="nav-item px-3">
                                     <a class="nav-link font-nav" href="../demande-de-devis">Demande de devis</a>
                                 </li>
+                                <li class="nav-item px-3">
+                                    <a class="nav-link font-nav" href="mentions-legales">Mentions légales</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -131,7 +177,7 @@
             </div>
         </footer>
         <div class="footer-copyright text-center mt-3">
-            <p>&nbsp;Copyright&nbsp;&copy;&nbsp;DannaCode <script>document.write(new Date().getFullYear())</script>. Tous droits réservés.</p>
+            <p>&nbsp;Copyright&nbsp;&copy;&nbsp;DannaCode <script>document.write(new Date().getFullYear())</script> - <a href="mentions-legales" class="btn-mention">Mentions légales</a></p>
         </div>
         <a href="#" class="scroll-laptop" id="scrollButton">
             <span id="scrollIcon">
@@ -183,7 +229,7 @@
             </svg>
         </div>
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-        <script src="../assets/js/script.js"></script>
+        <script defer type="module" src="../assets/js/script.js"></script>
         <script>
             window.addEventListener('focus', function() {
               // Modifiez le titre de la page ici

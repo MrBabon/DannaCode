@@ -26,3 +26,6 @@
     color: var(--paragraphe);
     font-weight: 600;
 }
+.articles-mentions li {
+    margin-top: 30px;
+}
