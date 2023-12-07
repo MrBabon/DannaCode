@@ -1,9 +1,11 @@
+.form-map{
+    display: flex;
+    justify-content: space-between;
+}
 .formulaire { 
     display: flex;
     justify-content: left;    
 }
-
-
 .form {
     display: flex;
     flex-direction: column;
@@ -14,7 +16,9 @@
     background-color: var(--navbar);
     padding: 30px;
   }
-  
+  .red{
+    color: firebrick;
+  }
   .input, textarea {
     margin: 1em 0 1em 0;
     width: 460px;
@@ -51,7 +55,18 @@
     padding: 0.4em;
     background: transparent;
   }
-  
+
+/* Si l'utilisateur à une sugestion de mettre automatiquement ses coordonnée */
+
+input:-webkit-autofill {
+    transition: color 5000s ease-in-out 0s, background-color 5000s ease-in-out 0s;
+}
+input:-webkit-autofill:focus {
+    background-color: initial !important;
+    color: #e8e8e8 !important;
+}
+/* --------------------------------------------------------------------------- */
+
   .input textarea:focus ~ label,
   .input textarea:valid ~ label {
     transform: translateY(-50%) scale(.9);
@@ -98,5 +113,7 @@
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   }
-  
-  
+.accept-form{
+    color: var(--paragraphe);
+    width: 460px;
+}

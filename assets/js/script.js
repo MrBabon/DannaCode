@@ -4,6 +4,7 @@ import { setupScrollTop } from './scroll-top.js';
 import { handleErrors, handleResourceErrors } from './error-handler.js';
 
 
+
 // LOADER PAGE
 document.addEventListener('DOMContentLoaded', setupLoader);
 
