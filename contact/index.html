@@ -15,6 +15,8 @@
         <meta name="description" content="DannaCode. || Votre solution web tout-en-un : conception de sites (vitrine, e-commerce, landing page), création d'applications avec espace membre, génération de leads, maintenance, et référencement. Simplifiez votre digital avec notre expertise.">
         <meta name="keywords" content="Conception de sites web, Site vitrine, Site e-commerce, Landing page, Application web, Espace membre, Génération de leads, Maintenance web, Référencement SEO, Développement web, Web design, Expérience utilisateur (UX), Interface utilisateur (UI),Création digitale, Stratégie web, Solutions numériques, Optimisation de site, Réactivité mobile, Design moderne, Performance web">
         <meta name="theme-color" content="#06373A" />
+        <!-- RECAPTCHA -->
+        <!-- <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lfe4CkpAAAAAAQGH2Gc9UMj2kqF_5Gjj5CneSZb"></script> -->
         <!-- FAVICON -->
         <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/Logo.png" />
         <link rel="icon" type="image/png" sizes="32x23" href="../assets/images/Logo.png" />
@@ -96,7 +98,7 @@
         <!--   FORMULAIRE  -->
         <!-- ************* -->
         <section id="formulaire">
-            <div class="container form-map">
+            <div class="container-form form-map">
                 <div class="formulaire">
                     <form class="form" id="contact-form" method="post" action="" role="form">
                         <div class="input">
@@ -115,7 +117,7 @@
                         </div>
                         
                         <div class="input">
-                            <input required autocomplete="off" name="phone" id="phone" type="tel" class="comments">
+                            <input required autocomplete="off" name="phone" id="phone" type="text" class="comments">
                             <label for="phone">Votre téléphone <span class="red">*</span></label>
                         </div>
                         
@@ -123,14 +125,29 @@
                             <textarea required cols="50" rows="1" name="message" id="message"></textarea>
                             <label for="message">Message <span class="red">*</span></label>
                         </div>
-                        <input type="submit" value="Envoyer" class="button">
-                        <p class="accept-form">En soumettant ce formulaire, j'accepte que mes données à caractère personnel saisies soient traitées dans le cadre de la demande de devis et de la relation commerciale qui peut en découler. Pour en savoir plus sur la gestion de vos données personnelles et pour exercer vos droits, reportez-vous à notre politique de gestion des données</p>
+                        <div class="form-check">
+                            <input required class="form-check-input" type="checkbox" value="accepted" name="checkbox" id="flexCheckIndeterminate">
+                            <label class="form-check-label accept-form" for="flexCheckIndeterminate">
+                                <span class="red">*</span> En soumettant ce formulaire, j'accepte que mes données à caractère personnel saisies soient traitées dans le cadre de la demande de devis et de la relation commerciale qui peut en découler. Pour en savoir plus sur la gestion de vos données personnelles et pour exercer vos droits, reportez-vous à notre <a href="../mentions-legales" class="politique">politique de gestion des données</a>.
+                            </label>
+                        </div>
+                        <input class="button" type="submit" value="Envoyer">
                     </form>
                 </div>
                 <div id="map"></div>
             </div>
         </section>
-        <footer class=" border-bottom border-top border-secondary">
+        <section>
+            <div class="overlay" id="overlay">
+                <div class="modal" id="modal">
+                    <p>Votre message a bien été envoyé. Merci de m'avoir contacté.</p>
+                    <div>
+                        <a href=".." onclick="closeModal()">Retour à l'accueil</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="border-bottom border-top border-secondary">
             <div class="container-fluid">
                 <div class="row">
                     <div class="foot-contenu">
@@ -178,7 +195,7 @@
                                     <a class="nav-link font-nav" href="../demande-de-devis">Demande de devis</a>
                                 </li>
                                 <li class="nav-item px-3">
-                                    <a class="nav-link font-nav" href="mentions-legales">Mentions légales</a>
+                                    <a class="nav-link font-nav" href="../mentions-legales">Mentions légales</a>
                                 </li>
                             </ul>
                         </div>
@@ -189,7 +206,7 @@
         <div class="footer-copyright text-center mt-3">
             <p>&nbsp;Copyright&nbsp;&copy;&nbsp;DannaCode <script>document.write(new Date().getFullYear())</script> - <a href="mentions-legales" class="btn-mention">Mentions légales</a></p>
         </div>
-        <a href="#" class="scroll-laptop" id="scrollButton">
+        <a href="#" class="" id="scrollButton">
             <span id="scrollIcon">
                 <i class="bi bi-chevron-up" style="color: var(--color-flash);"></i>
             </span>

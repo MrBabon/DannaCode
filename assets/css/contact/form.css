@@ -4,81 +4,80 @@
 }
 .formulaire { 
     display: flex;
-    justify-content: left;    
+    justify-content: left;  
 }
 .form {
     display: flex;
     flex-direction: column;
     position: relative;
+    left: 100px;
     bottom: 30px;
     border-radius: 3px;
     box-shadow: rgba(0, 0, 0, 0.24) 3px 5px 3px;
     background-color: var(--navbar);
     padding: 30px;
-  }
-  .red{
-    color: firebrick;
-  }
-  .input, textarea {
-    margin: 1em 0 1em 0;
-    width: 460px;
-    position: relative;
-  }
+}
+.red{
+  color: firebrick;
+}
+.input, textarea {
+  margin: 1em 0 1em 0;
+  width: 460px;
+  position: relative;
+}
   
-  .input input, textarea {
-    font-size: 100%;
-    padding: 0.7em;
-    outline: none;
-    color: #e8e8e8;
-    border: none;
-    border-bottom: 2px solid var(--body);
-    background: transparent;
-    border-radius: none;
-    width: 100%;
-    resize: none;
-  }
+.input input, textarea {
+  font-size: 100%;
+  padding: 0.7em;
+  outline: none;
+  color: #e8e8e8;
+  border: none;
+  border-bottom: 2px solid var(--body);
+  background: transparent;
+  border-radius: none;
+  width: 100%;
+  resize: none;
+}
   
-  .input label {
-    font-size: 100%;
-    position: absolute;
-    left: 0;
-    color: #e8e8e8;
-    padding: 0.7em;
-    margin-left: 0.1em;
-    pointer-events: none;
-    transition: all 0.5s ease;
-  }
+.input label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  color: #e8e8e8;
+  padding: 0.7em;
+  margin-left: 0.1em;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
   
-  .input :is(input:focus, input:valid)~label {
-    transform: translateY(-50%) scale(.9);
-    margin: 0em;
-    padding: 0.4em;
-    background: transparent;
-  }
+.input :is(input:focus, input:valid)~label {
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  padding: 0.4em;
+  background: transparent;
+}
 
+.input textarea:focus ~ label,
+.input textarea:valid ~ label {
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  padding: 0.4em;
+  background: transparent;
+}
+  
+.inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(37, 37, 211);
+}
 /* Si l'utilisateur à une sugestion de mettre automatiquement ses coordonnée */
 
 input:-webkit-autofill {
-    transition: color 5000s ease-in-out 0s, background-color 5000s ease-in-out 0s;
+  transition: color 5000s ease-in-out 0s, background-color 5000s ease-in-out 0s;
 }
 input:-webkit-autofill:focus {
-    background-color: initial !important;
-    color: #e8e8e8 !important;
+  background-color: initial !important;
+  color: #e8e8e8 !important;
 }
 /* --------------------------------------------------------------------------- */
-
-  .input textarea:focus ~ label,
-  .input textarea:valid ~ label {
-    transform: translateY(-50%) scale(.9);
-    margin: 0em;
-    padding: 0.4em;
-    background: transparent;
-  }
-  
-  .inputGroup :is(input:focus, input:valid) {
-    border-color: rgb(37, 37, 211);
-  }
-  
   .form .button {
     color: #e8e8e8;
     font-size: 15px;
@@ -116,4 +115,28 @@ input:-webkit-autofill:focus {
 .accept-form{
     color: var(--paragraphe);
     width: 460px;
+}
+.politique{
+  text-decoration: none;
+  color: var(--color-flash);
+  font-weight: 300;
+  transition: all 0.2s ease;
+}
+.politique:hover{
+  color: var(--color-font);
+  transition: all 0.2s ease;
+}
+.thank-you{
+  color: var(--color-flash);
+}
+.form-check-input {
+  background-color: var(--color-font) !important;
+  border-color: var(--color-font) !important;
+}
+/* MAP */
+#map {
+  height: 100vh;
+  width: 30%;
+  position: sticky;
+  top: 0;
 }

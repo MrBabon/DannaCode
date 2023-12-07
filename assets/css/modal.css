@@ -1,0 +1,45 @@
+    /* Style pour le fond obscurcissant */
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        justify-content: center;
+        align-items: center;
+        color: white;
+        z-index: 9998;
+      }
+  
+      /* Style pour la fenêtre modale */
+      #modal {
+        display: none;
+        position: relative;
+        width: 700px;
+        height: 300px;
+        background: linear-gradient(110deg, var(--body)35%, var(--navbar));
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        text-align: center;
+      }
+  
+      /* Style pour le bouton dans la fenêtre modale */
+      .modal a {
+        position: relative;
+        top: 150px;
+        padding: 10px 20px;
+        background: var(--color-font);
+        text-decoration: none;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .modal p {
+        position: relative;
+        top: 100px;
+        font-size: 25px;
+      }

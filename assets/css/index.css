@@ -1,10 +1,10 @@
 /* GENERAL */
 @import url('general.css');
-@import url('mention.css');
 @import url('navbar.css');
 @import url('footer.css');
 @import url('scroll.css');
 @import url('loader.css');
+@import url('modal.css');
 /* ACCUEIL */
 @import url('home/banner.css'); 
 @import url('home/propos.css');
@@ -16,3 +16,6 @@
 /* CONTACT */
 @import url('contact/banner.css');
 @import url('contact/form.css');
+/* MENTION */
+@import url('mention/banner.css');
+@import url('mention/mention.css');
