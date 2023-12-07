@@ -10,7 +10,7 @@
         <!-- End Google Tag Manager -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DannaCode. || Contact</title>
+        <title>Contact || DannaCode.</title>
         <meta name="author" content="DannaCode.">
         <meta name="description" content="DannaCode. || Votre solution web tout-en-un : conception de sites (vitrine, e-commerce, landing page), création d'applications avec espace membre, génération de leads, maintenance, et référencement. Simplifiez votre digital avec notre expertise.">
         <meta name="keywords" content="Conception de sites web, Site vitrine, Site e-commerce, Landing page, Application web, Espace membre, Génération de leads, Maintenance web, Référencement SEO, Développement web, Web design, Expérience utilisateur (UX), Interface utilisateur (UI),Création digitale, Stratégie web, Solutions numériques, Optimisation de site, Réactivité mobile, Design moderne, Performance web">
@@ -29,6 +29,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Inter&display=swap" rel="stylesheet">
         <!-- --- -->
+        <!-- MAPBOX -->
+        <link href='https://api.mapbox.com/mapbox-gl-js/v3.0.0/mapbox-gl.css' rel='stylesheet' />
+        <script src='https://api.mapbox.com/mapbox-gl-js/v3.0.0/mapbox-gl.js'></script>
         <!-- BOOTSTRAP -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -93,31 +96,38 @@
         <!--   FORMULAIRE  -->
         <!-- ************* -->
         <section id="formulaire">
-            <div class="container">
+            <div class="container form-map">
                 <div class="formulaire">
-                    <form class="form">
+                    <form class="form" id="contact-form" method="post" action="" role="form">
                         <div class="input">
-                            <input required autocomplete="off" type="text">
-                            <label for="name">Votre nom</label>
+                            <input required autocomplete="off" name="firstname" id="firstname" type="text" class="comments">
+                            <label for="firstname">Votre Prénom <span class="red">*</span></label>
                         </div>
-                    
+                        
                         <div class="input">
-                            <input required autocomplete="off" name="email" type="email">
-                            <label for="email">E-mail</label>
+                            <input required autocomplete="off" name="name" id="name" type="text" class="comments">
+                            <label for="name">Votre nom <span class="red">*</span></label>
                         </div>
-
+                        
                         <div class="input">
-                            <input required autocomplete="off" name="telephone" type="tel">
-                            <label for="telephone">Votre téléphone</label>
+                            <input required autocomplete="off" name="email" id="email" type="email" class="comments">
+                            <label for="email">Votre E-mail <span class="red">*</span></label>
                         </div>
-                    
+                        
                         <div class="input">
-                            <textarea required cols="50" rows="1" id="message"></textarea>
-                            <label for="message">Message</label>
+                            <input required autocomplete="off" name="phone" id="phone" type="tel" class="comments">
+                            <label for="phone">Votre téléphone <span class="red">*</span></label>
+                        </div>
+                        
+                        <div class="input">
+                            <textarea required cols="50" rows="1" name="message" id="message"></textarea>
+                            <label for="message">Message <span class="red">*</span></label>
                         </div>
                         <input type="submit" value="Envoyer" class="button">
+                        <p class="accept-form">En soumettant ce formulaire, j'accepte que mes données à caractère personnel saisies soient traitées dans le cadre de la demande de devis et de la relation commerciale qui peut en découler. Pour en savoir plus sur la gestion de vos données personnelles et pour exercer vos droits, reportez-vous à notre politique de gestion des données</p>
                     </form>
                 </div>
+                <div id="map"></div>
             </div>
         </section>
         <footer class=" border-bottom border-top border-secondary">
@@ -230,10 +240,12 @@
         </div>
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <script defer type="module" src="../assets/js/script.js"></script>
+        <script defer src="../assets/js/contact.js"></script>
+        <script defer src="../assets/js/map.js"></script>
         <script>
             window.addEventListener('focus', function() {
               // Modifiez le titre de la page ici
-              document.title = 'DannaCode. || Contact';
+              document.title = 'Contact || DannaCode.';
             });
             window.addEventListener('blur', function() {
               // Utilise le titre de la page actuelle comme titre de base
