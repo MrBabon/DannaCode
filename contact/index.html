@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -98,7 +98,7 @@
         <!--   FORMULAIRE  -->
         <!-- ************* -->
         <section id="formulaire">
-            <div class="container-form form-map">
+            <div class="container form-map">
                 <div class="formulaire">
                     <form class="form" id="contact-form" method="post" action="" role="form">
                         <div class="input">
@@ -117,7 +117,7 @@
                         </div>
                         
                         <div class="input">
-                            <input required autocomplete="off" name="phone" id="phone" type="text" class="comments">
+                            <input required autocomplete="off" name="phone" id="phone" type="tel" pattern="[0-9]{10}" class="comments">
                             <label for="phone">Votre téléphone <span class="red">*</span></label>
                         </div>
                         
@@ -131,16 +131,19 @@
                                 <span class="red">*</span> En soumettant ce formulaire, j'accepte que mes données à caractère personnel saisies soient traitées dans le cadre de la demande de devis et de la relation commerciale qui peut en découler. Pour en savoir plus sur la gestion de vos données personnelles et pour exercer vos droits, reportez-vous à notre <a href="../mentions-legales" class="politique">politique de gestion des données</a>.
                             </label>
                         </div>
-                        <input class="button" type="submit" value="Envoyer">
+                        <input class="button-contact" type="submit" value="Envoyer">
                     </form>
+                    <h1>Comment nous joindre ?</h1>
                 </div>
+            </div>
+            <div id="map-container">
                 <div id="map"></div>
             </div>
         </section>
         <section>
             <div class="overlay" id="overlay">
                 <div class="modal" id="modal">
-                    <p>Votre message a bien été envoyé. Merci de m'avoir contacté.</p>
+                    <p>Nous vous remercions pour votre message. Votre demande est en cours de traitement et sera traitée dans les meilleurs délais.</p>
                     <div>
                         <a href=".." onclick="closeModal()">Retour à l'accueil</a>
                     </div>

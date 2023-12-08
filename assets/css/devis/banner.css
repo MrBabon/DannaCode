@@ -1,0 +1,19 @@
+.banner-devis{
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(https://res.cloudinary.com/dilp6xqmb/image/upload/v1701768623/Demande_de_devis.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+}
+.banner-devis h1{
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 65px;
+    text-shadow: 3px 5px 3px rgba(0, 0, 0, 0.5);
+}
+.banner-title-devis{
+    position: relative;
+    bottom: 30px;
+    font-size: 123px;
+    font-weight: 800;
+    text-shadow: 3px 5px 3px rgba(0, 0, 0, 0.5);
+}

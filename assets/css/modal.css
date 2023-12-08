@@ -29,7 +29,7 @@
       /* Style pour le bouton dans la fenêtre modale */
       .modal a {
         position: relative;
-        top: 150px;
+        top: 90px;
         padding: 10px 20px;
         background: var(--color-font);
         text-decoration: none;
@@ -38,8 +38,12 @@
         border-radius: 5px;
         cursor: pointer;
       }
+      .modal a:hover{
+        transform: scale(1.1);
+        color: #ffffff;
+      }
       .modal p {
         position: relative;
-        top: 100px;
-        font-size: 25px;
+        top: 50px;
+        font-size: 23px;
       }
