@@ -1,16 +1,15 @@
-.form-map{
+.form-contact{
     display: flex;
     justify-content: space-between;
 }
 .formulaire { 
     display: flex;
-    justify-content: left;  
+    justify-content: space-between;  
 }
 .form {
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 100px;
     bottom: 30px;
     border-radius: 3px;
     box-shadow: rgba(0, 0, 0, 0.24) 3px 5px 3px;
@@ -78,21 +77,22 @@ input:-webkit-autofill:focus {
   color: #e8e8e8 !important;
 }
 /* --------------------------------------------------------------------------- */
-  .form .button {
+  .form .button-contact {
     color: #e8e8e8;
-    font-size: 15px;
+    font-size: 25px;
     align-self: flex-start;
-    padding: 0.6em;
+    padding: 10px 20px;
     border: none;
+    border-radius: 3px;
     cursor: pointer;
-    margin-bottom: 50px;
-    background: transparent;
-    transition: all 0.3s ease-in-out;
+    margin: 40px 0;
+    background: linear-gradient(90deg, var(--color-font) 35%, var(--body));
+    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
   }
   
-  .form .button:before {
+  .form .button-contact:before {
     content: "";
     position: absolute;
     bottom: 100%;
@@ -104,13 +104,15 @@ input:-webkit-autofill:focus {
     transition: opacity 0.3s ease-in-out;
   }
   
-  .form button:hover:before {
+  .form .button-contact:hover:before {
     opacity: 0.2;
   }
   
-  .form button:hover {
-    transform: translateY(-3px);
+  .form .button-contact:hover {
+    transform: scale(1.1) !important;
+    color: #ffffff !important;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
   }
 .accept-form{
     color: var(--paragraphe);
@@ -126,17 +128,21 @@ input:-webkit-autofill:focus {
   color: var(--color-font);
   transition: all 0.2s ease;
 }
-.thank-you{
-  color: var(--color-flash);
-}
+
 .form-check-input {
   background-color: var(--color-font) !important;
   border-color: var(--color-font) !important;
 }
 /* MAP */
+#map-container {
+  position: relative;
+  height: 400px;
+  width: auto;
+}
+
 #map {
-  height: 100vh;
-  width: 30%;
-  position: sticky;
-  top: 0;
+  height: 100%;
+  width: 100%;
+  /* Désactive les événements de la souris pour cet élément */
+  pointer-events: none;
 }

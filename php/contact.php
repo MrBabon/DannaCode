@@ -1,63 +1,30 @@
 <?php
     header('Content-Type: application/json');
-    $array = array("firstname" => "", "name" => "", "email" => "", "phone" => "", "message" => "", "firstnameError" => "", "nameError" => "", "emailError" => "", "phoneError" => "", "messageError" => "", "isSuccess" => false);
-
+    $array = array(
+        "firstname" => verifyInput($_POST["firstname"]),
+        "name" => verifyInput($_POST["name"]),
+        "email" => verifyInput($_POST["email"]),
+        "phone" => verifyInput($_POST["phone"]),
+        "message" => verifyInput($_POST["message"]),
+        "firstnameError" => "",
+        "nameError" => "",
+        "emailError" => "",
+        "phoneError" => "",
+        "messageError" => "",
+        "isSuccess" => true
+    );
     $emailTo = "contact@dannacode.com";
+    $emailText = "";
+    $fields = array("firstname", "name", "email", "phone", "message");
     
-    if($_SERVER["REQUEST_METHOD"] == "POST")
-    {
-        $array["firstname"] = verifyInput($_POST["firstname"]);
-        $array["name"] = verifyInput($_POST["name"]);
-        $array["email"] = verifyInput($_POST["email"]);
-        $array["phone"] = verifyInput($_POST["phone"]);
-        $array["message"] = verifyInput($_POST["message"]);
-        $array["isSuccess"] = true;
-        $emailText = "";
-
-        if(empty($array["firstname"]))
-        {
-            $array["firstnameError"] = "Je veux connaitre votre prénom !";
+    foreach ($fields as $field) {
+        if (empty($array[$field])) {
+            $array[$field . "Error"] = "Le champ $field est obligatoire";
             $array["isSuccess"] = false;
-
+        } else {
+            $emailText .= ucfirst($field) . ": {$array[$field]}\n";
         }
-        else
-            $emailText .= "Prénom:{$array["firstname"]}\n";
-
-        if(empty($array["name"]))
-        {
-            $array["nameError"] = "Je veux connaitre votre nom !";
-            $array["isSuccess"] = false;
-            
-        }
-        else
-            $emailText .= "Nom: {$array["name"]}\n";
-
-        if(!isEmail($array["email"]))
-        {
-            $array["emailError"] = "J'ai besoin de votre email";
-            $array["isSuccess"] = false;
-                
-        }
-        else
-        $emailText .= "Email: {$array["email"]}\n";
-        
-        if(!isPhone($array["phone"]))
-        {
-            $array["phoneError"] = "Que des chiffres et des espaces";
-            $array["isSuccess"] = false;
-        }
-        else
-        $emailText .= "Téléphone: {$array["phone"]}\n";
-
-        if(empty($array["message"]))
-        {
-            $array["messageError"] = "Vous souhaitez me dire quoi ?";
-            $array["isSuccess"] = false;
-            
-        }
-        else
-            $emailText .= "Message: {$array["message"]}\n";
-
+    }
         
 
         
@@ -72,9 +39,7 @@
         
 
         echo json_encode($array);
-        
-
-    }
+    
     
     function isPhone($var)
     {
@@ -90,9 +55,6 @@
 
     function verifyInput($var)
     {
-        $var = trim($var);
-        $var = stripslashes($var);
-        $var = htmlspecialchars($var);
-        return $var;
+        return htmlspecialchars(stripslashes(trim($var)));
     }
 ?>
